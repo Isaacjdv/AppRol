@@ -1,52 +1,59 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #f0f0f0, #d0d0d0);
+    background: url('fondo.png') no-repeat center center fixed;
+    background-size: cover; /* Ajustar la imagen al tamaño de la pantalla */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    color: #fff; /* Ajustar el color de texto para mejor visibilidad */
 }
 
-.login-container, .registro-container, .admin-container {
-    background: #fff;
+.login-container {
+    background: rgba(155, 120, 238, 0.9); /* Fondo púrpura semitransparente para contraste */
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     text-align: center;
     width: 100%;
     max-width: 400px;
     transition: transform 0.3s ease;
 }
 
-.login-container:hover, .registro-container:hover, .admin-container:hover {
+.login-container:hover {
     transform: scale(1.05);
+}
+
+.logo {
+    width: 150px; /* Ajustar tamaño del logo */
+    margin-bottom: 20px;
 }
 
 h1 {
     margin-bottom: 20px;
-    color: #333;
+    color: #fff;
 }
 
 input[type="text"], input[type="password"] {
     width: calc(100% - 22px); /* Ajustar el ancho para que no sobrepase */
     padding: 15px;
     margin: 10px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #8a2be2;
     border-radius: 5px;
     font-size: 16px;
     transition: border 0.3s ease;
 }
 
 input[type="text"]:focus, input[type="password"]:focus {
-    border: 1px solid #007bff;
+    border: 1px solid #dda0dd;
     outline: none;
 }
 
 button {
     width: calc(100% - 22px); /* Ajustar el ancho para que no sobrepase */
     padding: 15px;
-    background: #007bff;
+    background: #8a2be2;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -57,18 +64,18 @@ button {
 }
 
 button:hover {
-    background: #0056b3;
+    background: #dda0dd;
     transform: translateY(-2px);
 }
 
 a {
-    color: #007bff;
+    color: #dda0dd;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #0056b3;
+    color: #ff69b4;
 }
 
 p {
@@ -87,7 +94,7 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #fff;
+    background: rgba(75, 0, 130, 0.9); /* Fondo púrpura semitransparente para contraste */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -99,11 +106,11 @@ p {
 .message-popup p {
     margin: 0;
     font-size: 16px;
-    color: #333;
+    color: #fff;
 }
 
 .message-popup button {
-    background: #007bff;
+    background: #8a2be2;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -114,7 +121,7 @@ p {
 }
 
 .message-popup button:hover {
-    background: #0056b3;
+    background: #dda0dd;
     transform: translateY(-2px);
 }
 
@@ -126,3 +133,4 @@ p {
         opacity: 1;
     }
 }
+
